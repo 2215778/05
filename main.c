@@ -4,17 +4,19 @@
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 int main(int argc, char *argv[]) { 
-    char c;
-    int num=0;
+    int sum=0;
+    int x;
+    int i;
     
-    printf("input a string: ");
-    while((c=getchar())!='\n') //입력 문자가 개행문자가 나올때까지 반복 
-    {
-    	if('0'<=c && c<='9') //입력된 글자 (c)가 숫자인가?
-		    num=num+1; //그렇다면 num에 하나를 센다.
-	}
-    
-    printf("the number of digits is %i.\n",num); //num 출력 
+	printf("input a number: ");
+	scanf("%d",&x);
+	
+	 //for문을 활용해서 1부터 x까지 sum에 더하는 코드 
+	for(i=0; i<=x; i++) //반복 (초기식;조건식;증감식)
+	    sum=sum+i; //더하기     
+		   
+	printf("The result is %i\n",sum); //결과 출력
+	
 		 
 	return 0;
 }
