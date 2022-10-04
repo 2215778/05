@@ -19,9 +19,9 @@ int main(int argc, char *argv[]) {
 	    result=x*y;
 	else
 	    result=x/y;
-	    
 		 
 	printf("= %i\n",result);
+	
 	
 	return 0;
 }
